@@ -127,7 +127,6 @@ function display(choice) {
   for (let i = 0; i < choice; i++) {
     let sliceMeteo = weekMeteo.weather[i]; // slice l'objet weekMeteo et récupère la meteo
     let sliceDay = weekMeteo.day[i]; // slice l'objet weekMeteo et récupère le day
-    console.log(sliceDay, "<<<<<sliceDay>>>>>");
     let childContainer = document.createElement("div"); // crée une div
     parentContainer.appendChild(childContainer); // insère la div dans le container parent préexistant
     childContainer.classList.add("meteo-block"); // ajoute une classe au container enfant
