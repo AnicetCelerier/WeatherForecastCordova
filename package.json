@@ -19,6 +19,7 @@
   "devDependencies": {
     "cordova-browser": "^6.0.0",
     "cordova-plugin-battery-status": "^2.0.3",
+    "cordova-plugin-camera": "^6.0.0",
     "cordova-plugin-geolocation": "^4.1.0"
   },
   "cordova": {
@@ -29,7 +30,8 @@
       "cordova-plugin-battery-status": {},
       "cordova-plugin-geolocation": {
         "GPS_REQUIRED": "true"
-      }
+      },
+      "cordova-plugin-camera": {}
     }
   }
 }
