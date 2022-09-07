@@ -1,0 +1,22 @@
+// variable
+$height: 150px;
+$width: 150px;
+$color: rgb(0, 0, 0);
+$padding: 10px;
+$radial-gradient :radial-gradient(
+    100% 100% at 100% 0%,
+    #f1a708 0%,
+    #d48673 100%);
+
+
+$breakpoints: (
+    "phone-down": 500px,
+    "tablet-up": 768px,
+    "tablet-down": 900px,
+    "desktop-up": 1024px,
+    "desktop-down": 1280px,
+    "widescreen-up": 1440px
+);
+
+
+

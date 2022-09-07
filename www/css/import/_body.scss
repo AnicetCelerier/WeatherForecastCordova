@@ -1,0 +1,165 @@
+//body
+// mettre en flex direction column pour le resonsive
+//utivise width fix avec 9vm par exemple pour éviter le décalage lors du hover
+
+body {
+  height: 100vh;
+  margin: 0;
+  overflow: scroll;
+    background-image: radial-gradient(
+        100% 100% at 100% 0%,
+        #f1a708 0%,
+        #d48673 100%
+      );
+    background-repeat: no-repeat;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+#input-bloc{
+    @include center-flex;
+    margin: 30px;
+}
+
+.meteo-block{
+    background: radial-gradient(
+      100% 100% at 100% 0%,
+      #f1a708 0%,
+      #d48673 100%
+    );
+    box-shadow: 0px 2px 4px rgba(126, 70, 66, 0.4),0px 7px 13px -3px rgba(117, 61, 59, 0.3),inset 0px -3px 0px rgba(111, 73, 58, 0.5);
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
+    @include border-radius(20px);
+    @include center-flex;
+    padding: 10px;
+    margin: 5px;
+    display : flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-wrap: break-word;
+}
+
+span {
+    font-family: JetBrains Mono,monospace;
+    color: #fff;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+
+img {
+    margin: 10px;
+    filter: invert(99%) sepia(0%) saturate(0%) hue-rotate(299deg) brightness(107%) contrast(100%) drop-shadow( 0 1px 0 rgba(0, 0, 0, 0.4));
+}
+
+#choseDays{
+    margin: 5px;
+    font-size: unset;
+    text-align: center;
+    box-sizing: border-box;
+    border-radius: 4px;
+    border-width: 0;
+    display: inline-flex;
+    overflow: hidden;
+    padding-left: 24px;
+    padding-right: 24px;
+    color: #fff;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    cursor: pointer;
+    font-family: JetBrains Mono,monospace;
+    text-decoration: none;
+    height: 42px;
+    transition: box-shadow 0.15s ease,transform 0.15s ease;
+    will-change: box-shadow,transform;
+    background: radial-gradient(
+      100% 100% at 100% 0%,
+      #f1a708 0%,
+      #d48673 100%
+    );
+    box-shadow: 0px 2px 4px rgba(126, 70, 66, 0.4),0px 7px 13px -3px rgba(117, 61, 59, 0.3),inset 0px -3px 0px rgba(111, 73, 58, 0.5);
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
+}
+
+
+
+#choseDays:hover {
+    border: 1px solid rgba(#000, .05);
+    box-shadow: 1px 1px 2px rgba(rgb(182, 69, 40), .2); 
+    text-decoration: none;
+    transition: all 250ms linear;
+  }
+
+.submit {
+    margin: 5px;
+    font-size: unset;
+    text-align: center;
+    box-sizing: border-box;
+    border-radius: 4px;
+    border-width: 0;
+    display: inline-flex;
+    overflow: hidden;
+    padding-left: 24px;
+    padding-right: 24px;
+    color: #fff;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    appearance: none;
+    cursor: pointer;
+    font-family: JetBrains Mono,monospace;
+    text-decoration: none;
+    height: 42px;
+    // transition: box-shadow 0.15s ease,transform 0.15s ease;
+    // will-change: box-shadow,transform;
+    background: radial-gradient(
+      100% 100% at 100% 0%,
+      #f1a708 0%,
+      #d48673 100%
+    );
+    box-shadow: 0px 2px 4px rgba(126, 70, 66, 0.4),0px 7px 13px -3px rgba(117, 61, 59, 0.3),inset 0px -3px 0px rgba(111, 73, 58, 0.5);
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
+}
+
+.submit:hover {
+    border: 2px solid rgba(#000, .05);
+    box-shadow: 1px 1px 2px rgba(rgb(182, 69, 40), .2); 
+    text-decoration: none;
+    transition: all 250ms linear;
+  }
+
+ #cityInput {
+    // -webkit-font-smoothing: antialiased;
+    // -webkit-text-size-adjust: 100%;
+    margin : 5px;
+    box-sizing: border-box;
+    font-family: Poppins,Arial,sans-serif;
+    font-size: 14px;
+    letter-spacing: .7px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: unset;
+    text-align: center;
+    border-radius: 4px;
+    border-width: 0;
+    display: inline-flex;
+    overflow: hidden;
+    padding-left: 24px;
+    padding-right: 24px;
+    color: rgb(0, 0, 0);
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    appearance: none;
+    cursor: pointer;
+    font-family: JetBrains Mono,monospace;
+    text-decoration: none;
+    height: 42px;
+    transition: box-shadow 0.15s ease,transform 0.15s ease;
+    will-change: box-shadow,transform;
+}
+

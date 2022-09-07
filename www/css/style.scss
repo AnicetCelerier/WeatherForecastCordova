@@ -1,0 +1,48 @@
+@import 'import/mixin';
+@import 'import/variable';
+@import 'import/header';
+@import 'import/body';
+
+
+
+#big-container{
+    display : flex;
+    flex-direction: column;
+    align-items: center;
+    height: 90%;
+    overflow-y: auto;
+}
+
+#parent-container{
+    @include center-flex;
+    flex-direction: column;
+    div{
+        height: $height;
+        width: $width;
+        color: $color;
+    }
+}
+
+html {
+    font-family: 'Roboto', sans-serif;
+    height:100%;
+}
+
+
+
+    
+/* 
+.message {
+    height: $height;
+    width: $width;
+}
+.success {
+    @extend .message;
+    background-color: green;
+}
+
+.error{
+    @extend .message;
+    background-color: red;
+}
+ */
