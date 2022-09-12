@@ -3,7 +3,8 @@
 //utivise width fix avec 9vm par exemple pour éviter le décalage lors du hover
 
 body {
-  height: 100vh;
+  min-height: 100vh;
+  height: 100%;
   margin: 0;
   overflow: scroll;
     background-image: radial-gradient(
