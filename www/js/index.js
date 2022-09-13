@@ -92,6 +92,7 @@ function onDeviceReady() {
 document.addEventListener("deviceready", onDeviceReady, false);
 function onDeviceReady() {
   window.open = cordova.InAppBrowser.open;
+
   var ref = cordova.InAppBrowser.open(
     "https://joazco.com",
     "_blank",
@@ -197,12 +198,16 @@ function onDeviceReady() {
 //     $('#status-message').text("message received: "+params.data.my_message);
 // }
 
-window.screen.orientation.lock("landscape");
-console.log("Orientation is " + screen.orientation.type);
+// window.addEventListener("orientationchange", function () {
+//   console.log(screen.orientation.type); // e.g. portrait
+//   window.screen.orientation.lock("landscape");
+//   console.log("Orientation is " + screen.orientation.type);
+// });
+
 
 document.addEventListener("deviceready", onDeviceReady, false);
 function onDeviceReady() {
+  window.screen.orientation.lock("portrait");
   console.log(StatusBar);
-  StatusBar.overlaysWebView(true);
   StatusBar.backgroundColorByName("orange");
 }
